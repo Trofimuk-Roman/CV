@@ -1,0 +1,314 @@
+/* merriweather-regular - latin */
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('assets/merriweather-v28-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('assets/merriweather-v28-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* merriweather-700 - latin */
+  @font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('assets/merriweather-v28-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('assets/merriweather-v28-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+:root{
+    --font-family-h1: merriweather, normal;
+    --font-family-p: Arial, Helvetica, sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth; /*smooth transition to anchor/плавная прокрутка к якорю*/
+    background-image: url(assets/fon.jpg);
+}
+.body{
+    max-width: 1440px;
+    min-width: 400px;
+    height: 2141px;
+    margin: 0 auto;
+    background-color: rgb(218, 218, 218);
+    margin-top: 20px;
+    border-radius: 100px;
+}
+a {
+    text-decoration:none;
+    color: rgb(255, 167, 4);
+    text-shadow: black 2px 3px 4px;
+  }
+.foto{
+    /*filter: blur(3px);*/     /*размытие div*/
+    border-radius: 100px;
+    box-shadow: 0 0 7px #666; 
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: 0.7s ease-in-out;
+}
+.foto:hover.foto {
+    filter: grayscale(0);
+    transition: 0.7s ease-in-out;
+ }
+.header{
+    padding: 20px;
+}
+.header-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 0px 30px rgb(89, 89, 89);
+    border-radius: 100px;
+}
+.header-name{
+    display: inline;
+    position: absolute;
+    font-family: Merriweather;
+    font-size: 45px;
+    color: rgb(255, 167, 4);
+    text-shadow: black 2px 3px 4px; /*контур горизонталь вертикаль радиус размытия*/
+    margin-top: 100px;
+    margin-left: 542px;
+}
+
+.header-nav{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+}
+.header-nav-li-contacts{
+    display: inline;
+    margin-left: 443px;
+    font-family: Merriweather;
+    font-size: 20px;
+    color: rgb(255, 167, 4);
+    text-shadow: black 1px 1px 2px;
+    cursor: pointer;
+
+}
+.header-nav-li-contacts:hover{
+    color: red;
+    /*border-bottom: 2px solid rgb(255, 167, 4);*/
+}
+.header-nav-li-about-me{
+    display: inline;
+    padding-left: 40px;
+    font-family: Merriweather;
+    font-size: 20px;
+    color: rgb(255, 167, 4);
+    text-shadow: black 1px 1px 2px;
+    cursor: pointer;
+}
+.header-nav-li-about-me:hover{
+    color: red;
+}
+.header-nav-li-skills{
+    display: inline;
+    padding-left: 40px;
+    font-family: Merriweather;
+    font-size: 20px;
+    color: rgb(255, 167, 4);
+    text-shadow: black 1px 1px 2px;
+    cursor: pointer;
+}
+.header-nav-li-skills:hover{
+    color: red;
+}
+.header-nav-li-education{
+    display: inline;
+    padding-left: 40px;
+    font-family: Merriweather;
+    font-size: 20px;
+    color: rgb(255, 167, 4);
+    text-shadow: black 1px 1px 2px;
+    cursor: pointer;
+}
+.header-nav-li-education:hover{
+    color: red;
+}
+.header-nav-li-code-example{
+    display: inline;
+    padding-left: 40px;
+    font-family: Merriweather;
+    font-size: 20px;
+    color: rgb(255, 167, 4);
+    text-shadow: black 1px 1px 2px;
+    cursor: pointer;
+}
+.header-nav-li-code-example:hover{
+    color: red;
+}
+.computer{
+    position: absolute;
+    margin-left: 1107px;
+    margin-top: 10px;
+}
+.section-contacts{
+    font-family: Merriweather;
+    font-size: 25px;
+    color: rgb(255, 167, 4);
+    margin-top: 50px;
+    margin-left: 40px;
+    height: 250px;
+    color: rgb(255, 167, 4);
+    text-shadow: black 1px 1px 2px;
+}
+.section-contacts-info{
+    font-family: Merriweather, normal;
+    font-size: 20px;
+    color: black;
+    text-shadow: none;
+}
+.section-about-me{
+    font-family: Merriweather;
+    font-size: 25px;
+    color: rgb(255, 167, 4);
+    margin-top: 50px;
+    margin-left: 864px;
+    height: 250px;
+    color: rgb(255, 167, 4);
+    text-shadow: black 1px 1px 2px;
+}
+.section-about-me-info{
+    font-family: Merriweather, normal;
+    font-size: 20px;
+    color: black;
+    text-shadow: none;
+    margin-right: 40px;
+    margin-left: -150px;
+    line-height: 40px;
+}
+.section-skills{
+    font-family: Merriweather;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 40px;
+    height: 462px;
+    color: rgb(255, 167, 4);
+    text-shadow: black 1px 1px 2px;
+}
+.section-skills-hard{
+    font-family: Merriweather, normal;
+    font-size: 20px;
+    color: black;
+    text-shadow: none;
+}
+.color-red{
+    font-family: Merriweather;
+    font-size: 25px;
+    color: rgba(255, 4, 4, 0.693);
+    color: rgba(255, 4, 4, 0.693);
+    text-shadow: black 1px 1px 2px;
+}
+.section-skills-soft{
+    position: absolute;
+    font-family: Merriweather;
+    font-size: 25px;
+    color: rgb(255, 167, 4);
+    margin-top: -441px;
+    margin-left: 400px;
+    text-shadow: black 1px 1px 2px;
+}
+.section-skills-soft-info{
+    font-family: Merriweather, normal;
+    font-size: 20px;
+    color: black;
+    text-shadow: none;
+    padding-top: 10px;
+}
+.section-skills-hard-html{
+    padding-left: 86px;
+    font-size: 26px;
+    color: rgb(255, 167, 4);;
+}
+.section-skills-hard-css{
+    padding-left: 112px;
+    font-size: 26px;
+    color: rgb(255, 167, 4);
+}
+.section-skills-hard-js{
+    padding-left: 47px;
+    font-size: 26px;
+    color: rgb(255, 167, 4);
+}
+.section-skills-hard-vscode{
+    padding-left: 67px;
+    font-size: 26px;
+    color: rgb(255, 167, 4);
+}
+.section-skills-hard-jira{
+    padding-left: 110px;
+    font-size: 26px;
+    color: rgb(255, 167, 4);
+}
+.section-skills-hard-bitrix24{
+    padding-left: 62px;
+    font-size: 26px;
+    color: rgb(255, 167, 4);  
+}
+.section-skills-hard-github{
+    padding-left: 111px;
+    font-size: 26px;
+    color: rgb(255, 167, 4);  
+}
+.section-education{
+    font-family: Merriweather;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 40px;
+    height: 500px;
+    color: rgb(255, 167, 4);
+    text-shadow: black 1px 1px 2px;
+}
+.section-education-languages{
+    font-family: Merriweather;
+    font-size: 25px;
+    margin-top: 78px;
+    color: rgb(255, 167, 4);
+    text-shadow: black 1px 1px 2px;
+}
+.section-code-example{
+    position: absolute;
+    font-family: Merriweather;
+    font-size: 25px;
+    margin-top: -159px;
+    margin-left: 400px;
+    color: rgb(255, 167, 4);
+    text-shadow: black 1px 1px 2px;
+}
+.footer{
+    font-family: Merriweather;
+    font-size: 25px;
+    margin-top: 80px;
+}
+.footer-year{
+    margin-left: 480px;
+}
+.footer-name{
+    margin-left: 180px;
+}
+.contacts-icon{
+    position: absolute;
+    margin-top: -201px;
+    margin-left: 824px;
+}
+.about-me-icon{
+    position: absolute;
+    margin-top: -150px;
+    margin-left: -416px;
+}
+.skills-icon{
+    position: absolute;
+    margin-top: -277px;
+    margin-left: 811px;
+}
+.education-icon{
+    position: absolute;
+    margin-top: -410px;
+    margin-left: 830px;
+}
